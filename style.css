@@ -5,6 +5,14 @@
     box-sizing: border-box;
 }
 
+/* @font-face for JeanneModernoUltra */
+@font-face {
+    font-family: 'JeanneModernoUltra';
+    src: url('fonts/JeanneModernoUltra.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 
 /* @font-face for JeanneModernoUltraItalic */
 @font-face {
@@ -175,11 +183,36 @@ main {
 }
 
 
+/* Default link styles */
+a {
+    color: #8D581F; /* Default link color */
+}
+
+/* Visited links */
+a:visited {
+    color: #69400F; /* Color for visited links */
+}
+
+/* Hover effect */
+a:hover {
+    color: #69400F; /* Color on hover */
+}
+
+/* Active state (while clicking) */
+a:active {
+    color: #69400F; /* Color when clicked */
+}
+
+li {
+    list-style-type: none;
+}
+
+
 
 
 /* Using your custom fonts */
 h1 {
-    font-family: 'JeanneModernoUltraItalic', sans-serif; /* Fallback to sans-serif if the custom font fails to load */
+    font-family: 'JeanneModernoUltra', sans-serif; /* Fallback to sans-serif if the custom font fails to load */
 }
 
 h2 {
